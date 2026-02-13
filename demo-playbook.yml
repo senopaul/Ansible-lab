@@ -1,0 +1,16 @@
+---
+- name: Update and install VLC on servers
+  hosts: all
+  become: yes
+  tasks:
+    - name: Update all packages on hosts
+      yum:
+        name: "*"
+        state: latest
+      ignore_errors: yes
+
+    - name: Install VLC player
+      yum:
+        name: vlc
+        state: present
+      ignore_errors: yes

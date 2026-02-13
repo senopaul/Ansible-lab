@@ -1,0 +1,2 @@
+Target1 ansible_host=192.168.189.205 ansible_user=senopaul ansible_become_pass=123 ansible_interpreter_python=/usr/bin/python3.12
+Target2 ansible_host=192.168.189.121 ansible_user=senopaul ansible_become_pass=123 ansible_interpreter_python=/usr/bin/python3.12l
